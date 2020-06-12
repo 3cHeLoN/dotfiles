@@ -38,6 +38,7 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'arcticicestudio/nord-vim'
 Plug 'fatih/molokai'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 call plug#end()
 
@@ -46,8 +47,10 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 syntax enable
 set termguicolors
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme gruvbox
+
+hi Normal guibg=NONE ctermbg=NONE
 
 set shiftwidth=4
 set tabstop=4
@@ -63,10 +66,8 @@ set softtabstop=4
 let g:UltiSnipsSnippetDirectories=['~/.config/nvim/my-snippets']
 
 let g:lightline = {
-    \ 'colorscheme': 'PaperColor',
-    \ }
-
-
+     \ 'colorscheme': 'gruvbox',
+     \ }
 " spell checking
 " only enable for certain file types
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
