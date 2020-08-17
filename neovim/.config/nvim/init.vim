@@ -2,8 +2,8 @@ call plug#begin(stdpath('data') . '/plugged')
 
 " Completion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'deoplete-plugins/deoplete-jedi'
 let g:deoplete#enable_at_startup = 1
+Plug 'deoplete-plugins/deoplete-jedi'
 
 " list of plugins
 Plug 'junegunn/vim-plug'
@@ -15,7 +15,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'tell-k/vim-autopep8'
-Plug 'stevearc/vim-arduino'
+" Plug 'stevearc/vim-arduino'
 Plug 'mattn/emmet-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
@@ -31,6 +31,7 @@ Plug 'junegunn/fzf.vim'
 "Visuals
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
+Plug 'skammer/vim-css-color'
 
 " Themes
 Plug 'morhetz/gruvbox'
@@ -39,6 +40,8 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'fatih/molokai'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'dracula/vim'
+Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
@@ -47,8 +50,8 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 syntax enable
 set termguicolors
-set background=dark
-colorscheme gruvbox
+set background=light
+colorscheme dracula
 
 hi Normal guibg=NONE ctermbg=NONE
 
@@ -66,7 +69,7 @@ set softtabstop=4
 let g:UltiSnipsSnippetDirectories=['~/.config/nvim/my-snippets']
 
 let g:lightline = {
-     \ 'colorscheme': 'gruvbox',
+     \ 'colorscheme': 'dracula',
      \ }
 " spell checking
 " only enable for certain file types
