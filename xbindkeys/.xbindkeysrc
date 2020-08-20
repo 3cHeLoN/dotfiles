@@ -1,5 +1,5 @@
 # start browser
-"firefox"
+"$BROWSER"
 Mod4 + b
 # take a screenshot
 "sleep 0.2; scrot -s -e 'xclip -selection c -t image/png < $f'"

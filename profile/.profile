@@ -2,7 +2,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib:/usr/local/lib
 export PATH=$PATH:$HOME/.local/bin
 export EDITOR=nvim
 export TERMINAL=st
-export BROWSER=firefox
+export BROWSER=brave
 
 # visuals
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version=2'

@@ -1,0 +1,10 @@
+#!/bin/sh
+# autostart section
+feh --bg-scale /home/folkert/Pictures/wallpapers/0005.jpg
+dwmblocks &
+picom -b &
+unclutter &
+dunst &
+xbindkeys &
+protonmail-bridge --noninteractive &
+dropbox-cli start &
