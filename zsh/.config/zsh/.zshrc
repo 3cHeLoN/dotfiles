@@ -83,7 +83,6 @@ xcalib -d $DISPLAY $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm
 # Load syntax highlighting; should be last.
 source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 
-
 eval `dircolors $HOME/.dircolors/dircolors.ansi-dark`
 
 # enable autojump
@@ -96,4 +95,5 @@ if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]
   exec startx
 fi
 
+setxkbmap -option caps:swapescape
 fortune

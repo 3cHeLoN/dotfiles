@@ -17,7 +17,7 @@ Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'tell-k/vim-autopep8'
 " Plug 'stevearc/vim-arduino'
 Plug 'mattn/emmet-vim'
-Plug 'jiangmiao/auto-pairs'
+" Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
 
 " File navigation
