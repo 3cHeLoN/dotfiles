@@ -1,0 +1,3 @@
+auto-reload yes
+browser "$BROWSER"
+macro y set browser "/usr/bin/mpv %u" ; open-in-browser ; set browser "/usr/bin/w3m %u"
