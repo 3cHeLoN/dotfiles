@@ -23,9 +23,6 @@ xmodmap -e "remove mod1 = Super_L"  # make sure X keeps it out of the mod1 group
 # switch caps key and esc key
 setxkbmap -option caps:swapescape
 
-# load color profile
-xcalib -d $DISPLAY $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm 
-
 export AWT_TOOLKIT=MToolkit
 while true; do
     # Log stderror to a file
