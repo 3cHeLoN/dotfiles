@@ -1,0 +1,9 @@
+# aliases
+alias ls='exa --group-directories-first'
+alias pacman='pacman --color=auto'
+alias pm='pulsemixer'
+alias open='xdg-open'
+alias r='ranger'
+alias v='vifmrun'
+alias yay='yay --color=auto'
+alias irssi='irssi --config="$XDG_CONFIG_HOME"/irssi/config --home="$XDG_DATA_HOME"/irssi'
