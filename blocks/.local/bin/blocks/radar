@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+wget -O weerkaart.gif "https://weerdata.weerslag.nl/image/1.0/?size=ani-12-Sneeuw-1920x1080&type=Freecontent&v=20608883"
+mpv --loop weerkaart.gif
