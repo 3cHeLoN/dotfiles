@@ -1,0 +1,2 @@
+#!/bin/bash
+dmenu_run -l 15 -i -m 0 -fn "monospace:size=12"
