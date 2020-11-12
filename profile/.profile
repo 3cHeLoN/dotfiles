@@ -4,7 +4,7 @@ export PATH=$PATH:$HOME/.local/bin
 # Default programs
 export EDITOR=nvim
 export TERMINAL=st
-export BROWSER=firefox
+export BROWSER=brave
 export READER=zathura
 
 # clean up
@@ -30,3 +30,7 @@ export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
 export KDEHOME="$XDG_CONFIG_HOME"/kde
 export ZDOTDIR=$HOME/.config/zsh
+
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi

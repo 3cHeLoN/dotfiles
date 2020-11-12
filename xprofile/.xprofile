@@ -1,6 +1,6 @@
 #!/bin/sh
 # autostart section
-feh --bg-scale Pictures/wallpapers/0048.jpg
+feh --bg-scale Pictures/wallpapers/0068.jpg
 dwmblocks &
 picom -b &
 unclutter &
