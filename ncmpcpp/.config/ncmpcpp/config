@@ -1,0 +1,9 @@
+ncmpcpp_directory = ~/.ncmpcpp
+lyrics_directory = ~/.lyrics
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = ~/Music
+song_columns_list_format = (7f)[green]{l} (20)[cyan]{a} (50)[yellow]{t|f:Title} (20)[magenta]{b}
+playlist_show_remaining_time = yes
+follow_now_playing_lyrics = yes
+fetch_lyrics_for_current_song_in_background = yes

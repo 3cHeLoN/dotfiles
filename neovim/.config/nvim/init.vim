@@ -32,6 +32,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'maximbaz/lightline-ale'
 Plug 'skammer/vim-css-color'
+Plug 'chrisbra/Colorizer'
 
 " Themes
 Plug 'morhetz/gruvbox'
@@ -42,6 +43,7 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'dracula/vim'
 Plug 'lifepillar/vim-solarized8'
+Plug 'sickill/vim-monokai'
 
 call plug#end()
 
@@ -50,10 +52,19 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 syntax enable
 set termguicolors
-set background=light
-colorscheme dracula
+set background=dark
+colorscheme nord
 
-hi Normal guibg=NONE ctermbg=NONE
+" let hour = (strftime('%H'))
+" if hour >= 19
+"     set background=dark
+" elseif hour >= 8
+"     set background=light
+" elseif hour >= 0
+"     set background=dark
+" endif
+
+" hi Normal guibg=NONE ctermbg=NONE
 
 set shiftwidth=4
 set tabstop=4
@@ -69,7 +80,7 @@ set softtabstop=4
 let g:UltiSnipsSnippetDirectories=['~/.config/nvim/my-snippets']
 
 let g:lightline = {
-     \ 'colorscheme': 'dracula',
+     \ 'colorscheme': 'nord',
      \ }
 " spell checking
 " only enable for certain file types
