@@ -14,16 +14,16 @@ try:
 
     text = bytes_obj.getvalue().decode('utf-8')
     entries = text.split()
-    
+
     data = [float(el.split('|')[0]) for el in entries]
     data = np.array(data)
-    
+
     # convert data
     rain_rate = 10 ** ((data - 109) / 32)
-    
+
     # integrate total
     rain_total = (5 / 60) * rain_rate.sum()
-    
+
     if rain_total > 0.05:
         symbol = "🌨"
     else:

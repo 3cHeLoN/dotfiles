@@ -44,6 +44,7 @@ Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'dracula/vim'
 Plug 'lifepillar/vim-solarized8'
 Plug 'sickill/vim-monokai'
+Plug 'Junegunn/goyo.vim'
 
 call plug#end()
 
@@ -54,17 +55,6 @@ syntax enable
 set termguicolors
 set background=dark
 colorscheme nord
-
-" let hour = (strftime('%H'))
-" if hour >= 19
-"     set background=dark
-" elseif hour >= 8
-"     set background=light
-" elseif hour >= 0
-"     set background=dark
-" endif
-
-" hi Normal guibg=NONE ctermbg=NONE
 
 set shiftwidth=4
 set tabstop=4
@@ -85,6 +75,9 @@ let g:lightline = {
 " spell checking
 " only enable for certain file types
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
+
+" rerun goyo on window resize
+autocmd VimResized * if exists('#goyo') | exe "normal \<c-w>=" | endif
 
 " Enable syntax highlighting for CUDA
 au BufNewFile,BufRead *.cu set ft=cuda
