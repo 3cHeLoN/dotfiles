@@ -7,3 +7,4 @@ song_columns_list_format = (7f)[green]{l} (20)[cyan]{a} (50)[yellow]{t|f:Title} 
 playlist_show_remaining_time = yes
 follow_now_playing_lyrics = yes
 fetch_lyrics_for_current_song_in_background = yes
+visualizer_type = "spectrum"

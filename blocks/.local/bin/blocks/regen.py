@@ -11,7 +11,7 @@ try:
     crl.setopt(crl.WRITEDATA, bytes_obj)
     crl.perform()
     crl.close()
-    
+
     text = bytes_obj.getvalue().decode('utf-8')
     entries = text.split()
     

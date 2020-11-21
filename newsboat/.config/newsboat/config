@@ -1,11 +1,11 @@
 auto-reload yes
 browser "$BROWSER"
-macro y set browser "/usr/bin/mpv %u" ; open-in-browser ; set browser "/usr/bin/w3m %u"
+macro y set browser "/usr/bin/mpv --hwdec=auto %u" ; open-in-browser ; set browser "/usr/bin/w3m %u"
 include /usr/share/doc/newsboat/contrib/colorschemes/nord
 bind-key j next
 bind-key k prev
-bind-key J down
-bind-key K up
+bind-key j down
+bind-key k up
 bind-key h quit
 bind-key l open
 bind-key u pageup
