@@ -7,6 +7,7 @@ shopt -s autocd
 
 # enable autojump
 source /etc/profile.d/autojump.bash
+eval `dircolors $HOME/.dircolors/dircolors.ansi-universal`
 
 # set vi mode
 set -o vi
