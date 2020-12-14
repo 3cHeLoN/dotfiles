@@ -20,7 +20,7 @@ systemctl --user import-environment DISPLAY
 setxkbmap -option caps:swapescape
 
 xmodmap -e "keycode 108 = Super_L"  # reassign Alt_R to Super_L
-modmap -e "remove mod1 = Super_L"  # make sure X keeps it out of the mod1 group
+xmodmap -e "remove mod1 = Super_L"  # make sure X keeps it out of the mod1 group
 
 export AWT_TOOLKIT=MToolkit
 while true; do

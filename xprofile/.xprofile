@@ -1,10 +1,9 @@
 #!/bin/sh
 # autostart section
-feh --bg-scale Pictures/wallpapers/0068.jpg
+feh --bg-scale Pictures/wallpapers/0111.jpg
 dwmblocks &
-picom -b &
+picom --experimental-backends --backend glx -b &
 unclutter &
 dunst &
 xbindkeys &
-protonmail-bridge --noninteractive &
 dropbox-cli start &
