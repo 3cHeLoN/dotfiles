@@ -1,0 +1,7 @@
+configuration {
+    modi: "drun,ssh";
+    font: "monospace 13";
+    combi-modi: "drun,ssh";
+    matching: "normal";
+    theme: "glue_pro_blue";
+}

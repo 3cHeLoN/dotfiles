@@ -9,3 +9,6 @@ Mod2 + Print
 # run dmenu desktop files
 "dmenu_desktop | dmenu -i  | dmenu_desktop -e"
 Mod4 + w
+# run xprop
+"xprop"
+Mod4 + x
