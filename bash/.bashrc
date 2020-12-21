@@ -26,7 +26,6 @@ PS1="[${GREEN}\u${RESET}"
 PS1+="@"
 PS1+="${BLUE}\h${RESET}"
 PS1+=" ${PURPLE}\w${RESET}"
-#PS1+="${RED}$(__git_ps1 ' (%s)')${RESET}"
 PS1+="${RED}"
 PS1+='$(__git_ps1 " (%s)")'
 PS1+="${RESET}"
@@ -36,6 +35,3 @@ export PS1
 
 # add color
 xcalib -d :0 $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm
-
-# start fish
-if [ -z "$BASH_EXECUTION_STRING" ]; then exec fish; fi

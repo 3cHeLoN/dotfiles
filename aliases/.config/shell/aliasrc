@@ -1,4 +1,5 @@
 # aliases
+alias nstow='stow --no-folding --dotfiles'
 alias ls='exa --group-directories-first'
 alias pacman='pacman --color=auto'
 alias pm='pulsemixer'

@@ -1,11 +1,6 @@
-# start browser
-"$BROWSER"
-Mod4 + b # take a screenshot
+# take a screenshot
 "sleep 0.2; scrot -s -e 'xclip -selection c -t image/png < $f && mv $f /tmp/ '"
 Print
 # take a screenshot
 "sleep 0.2; scrot -s -e 'xclip -selection c -t image/png < $f && mv $f /tmp/'"
 Mod2 + Print
-# run dmenu desktop files
-"dmenu_desktop | dmenu -i  | dmenu_desktop -e"
-Mod4 + w
