@@ -1,2 +1,2 @@
 #!/bin/bash
-amixer -D pulse sset Master 5%- && sigdwmblocks 1
+amixer -D pulse sset Master 3%- && sigdwmblocks 1

@@ -33,3 +33,9 @@ PS1+="${RESET}"
 PS1+="]\$ "
 
 export PS1
+
+# add color
+xcalib -d :0 $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm
+
+# start fish
+if [ -z "$BASH_EXECUTION_STRING" ]; then exec fish; fi
