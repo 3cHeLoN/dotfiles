@@ -1,0 +1,2 @@
+#!/bin/sh
+dmenu_desktop | dmenu -i -l 15 -fn "monospace:size=13" | dmenu_desktop -e
