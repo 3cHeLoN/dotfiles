@@ -1,8 +1,8 @@
 #!/bin/sh
 # autostart section
-feh --bg-scale Pictures/wallpapers/0111.jpg
+feh --bg-scale Pictures/wallpapers/0162.jpg
 dwmblocks &
-picom --experimental-backends --backend glx -b &
+picom --experimental-backends -b &
 unclutter &
 dunst &
 xbindkeys &

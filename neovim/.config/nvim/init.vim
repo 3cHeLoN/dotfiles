@@ -56,6 +56,7 @@ set termguicolors
 set background=dark
 colorscheme nord
 
+hi Normal guibg=NONE ctermbg=NONE
 set shiftwidth=4
 set tabstop=4
 set autoindent
