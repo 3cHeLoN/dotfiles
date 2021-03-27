@@ -1,0 +1,10 @@
+#!/bin/sh
+# test if ecasound is running
+ecasound_pid=$(pidof ecasound)
+
+# if not running
+if [ -z "$ecasound_pid" ]; then
+    echo "🟫"
+else
+    echo "🔴"
+fi

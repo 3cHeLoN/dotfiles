@@ -1,6 +1,8 @@
-. $XDG_CONFIG_HOME/aliasrc
-. $HOME/.local/bin/git-completion.bash
-. $HOME/.local/bin/git-prompt.sh
+source $XDG_CONFIG_HOME/aliasrc
+source $HOME/.local/bin/git-completion.bash
+source $HOME/.local/bin/git-prompt.sh
+source /usr/share/fzf/key-bindings.bash
+source /usr/share/fzf/completion.bash
 
 # autocd
 shopt -s autocd
@@ -10,7 +12,10 @@ source /etc/profile.d/autojump.bash
 eval `dircolors $HOME/.dircolors/dircolors.ansi-universal`
 
 # set vi mode
-set -o vi
+#set -o vi
+
+bind '"\eOA": history-search-backward'
+bind '"\eOB": history-search-forward'
 
 # do not overwrite files
 set -o noclobber
@@ -32,6 +37,3 @@ PS1+="${RESET}"
 PS1+="]\$ "
 
 export PS1
-
-# add color
-xcalib -d :0 $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm

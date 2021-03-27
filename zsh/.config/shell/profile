@@ -1,14 +1,11 @@
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$HOME/.local/lib:/lib:/usr/local/lib
-export PATH=$PATH:$HOME/.local/bin
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}$HOME/.local/lib"
+export PATH="${PATH:+${PATH}:}$HOME/.local/bin"
 
 # Default programs
 export EDITOR=nvim
-#export TERMINAL=st
-export TERMINAL=gnome-terminal
-#export BROWSER=google-chrome-stable
-#export READER=evince
-export BROWSER=brave
+export TERMINAL=st
 export READER=zathura
+export BROWSER=brave
 
 export LIBVA_DRIVER_NAME=iHD
 export VDPAU_DRIVER=va_gl
@@ -28,6 +25,10 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 # Wine
 export WINEARCH=win32
 
+# Video accleration
+export LIBVA_DRIVER_NAME=vdpau
+export VDPAU_DRIVER=nvidia
+
 # Fix config dirs
 export MPLAYER_HOME="$XDG_CONFIG_HOME"/mplayer
 export ANDROID_SDK_HOME="$XDG_CONFIG_HOME"/android
@@ -41,5 +42,5 @@ export ZDOTDIR=$HOME/.config/zsh
 if [[ -z "${DISPLAY}" ]] && [[ "${XDG_VTNR}" -eq 1 ]]; then
   exec startx
 fi
-
 xcalib -d $DISPLAY $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm
+
