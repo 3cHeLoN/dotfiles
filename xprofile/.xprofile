@@ -1,6 +1,6 @@
 #!/bin/sh
 # autostart section
-feh --bg-scale Pictures/wallpapers/0259.jpg
+feh --bg-scale Pictures/wallpapers/0075.jpg
 dwmblocks &
 #picom -b &
 picom --experimental-backends --backend glx -b &
