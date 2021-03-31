@@ -7,3 +7,4 @@ unclutter &
 dunst &
 xbindkeys &
 dropbox-cli start &
+xcalib -d $DISPLAY $HOME/Documents/Gaming-Movie-Nights-LP156WF6-SPB5.icm

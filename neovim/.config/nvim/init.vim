@@ -15,7 +15,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'tell-k/vim-autopep8'
-" Plug 'stevearc/vim-arduino'
+Plug 'stevearc/vim-arduino'
 Plug 'mattn/emmet-vim'
 " Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
@@ -149,3 +149,27 @@ inoremap <expr> <CR> (pumvisible() ? "\<c-y>\<cr>" : "\<CR>")
 " Use <TAB> to select the popup menu:
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" my_file.ino [arduino:avr:uno] [arduino:usbtinyisp] (/dev/ttyACM0:9600)
+function! MyStatusLine()
+  let port = arduino#GetPort()
+  let line = '%f [' . g:arduino_board . '] [' . g:arduino_programmer . ']'
+  if !empty(port)
+    let line = line . ' (' . port . ':' . g:arduino_serial_baud . ')'
+  endif
+  return line
+endfunction
+setl statusline=%!MyStatusLine()
+
+autocmd BufNewFile,BufRead *.ino let g:lightline = {
+      \ 'colorscheme': 'nord',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'arduino', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'arduino': 'MyStatusLine'
+      \ },
+      \ }
+
+

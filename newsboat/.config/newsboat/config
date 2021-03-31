@@ -12,4 +12,4 @@ bind-key u pageup
 bind-key d pagedown
 bind-key i toggle-show-read-feeds
 external-url-viewer "urlview"
-show-read-articles no
+show-read-articles yes
