@@ -1,0 +1,12 @@
+#!/bin/sh
+
+cat <<EOF | xmenu | sh &
+Browser		brave
+File Browser		pcmanfm
+News
+Movie Player		vlc
+Terminal (st)		st
+Youtube		gfeeds
+Shutdown		poweroff
+Reboot			reboot
+EOF

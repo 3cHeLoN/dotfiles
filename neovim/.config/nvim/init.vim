@@ -19,6 +19,7 @@ Plug 'tell-k/vim-autopep8'
 Plug 'mattn/emmet-vim'
 " Plug 'jiangmiao/auto-pairs'
 Plug 'psliwka/vim-smoothie'
+Plug 'davidhalter/jedi-vim'
 
 " File navigation
 Plug 'yegappan/mru'
