@@ -1,0 +1,8 @@
+#/bin/sh
+if [ -z "$1" ]; then
+    output=~/$(date +'%Y_%B_%d_%H:%M:%S').ogg
+else
+    output=$1/$(date +'%Y_%B_%d_%H:%M:%S').ogg
+fi
+
+ecasound -a:1 -ea:170 -i alsa,pulse_usbmic -f:16,2,44100 -a:2 -ea:170 -i alsa,pulse_monitor -f:16,2,44100 -a:1,2 -f:16,2,44100 -o $output -x

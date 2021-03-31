@@ -4,7 +4,7 @@ ecasound_pid=$(pidof ecasound)
 
 # if not running
 if [ -z "$ecasound_pid" ]; then
-    echo "🟫"
+    echo "🎙️"
 else
-    echo "🔴"
+    echo "🎤"
 fi

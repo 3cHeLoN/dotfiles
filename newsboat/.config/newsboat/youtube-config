@@ -1,0 +1,15 @@
+auto-reload yes
+browser "/usr/bin/mpv --hwdec=auto %u"
+include nord
+bind-key j next
+bind-key k prev
+bind-key j down
+bind-key k up
+bind-key h quit
+bind-key l open
+bind-key u pageup
+bind-key d pagedown
+bind-key i toggle-show-read-feeds
+external-url-viewer "urlview"
+show-read-articles yes
+feed-sort-order lastupdated

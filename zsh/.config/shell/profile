@@ -1,12 +1,9 @@
-export LD_LIBRARY_PATH="${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}$HOME/.local/lib"
+export LD_LIBRARY_PATH="${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}$HOME/.local/lib:/usr/local/lib"
 export PATH="${PATH:+${PATH}:}$HOME/.local/bin"
 
 # Default programs
 export EDITOR=nvim
 export TERMINAL=st
-#export READER=evince
-#export BROWSER=google-chrome
-#export TERMINAL=gnome-terminal
 export READER=zathura
 export BROWSER=brave
 
@@ -21,7 +18,6 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 
 # visuals
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version=3'
-export QT_STYLE_OVERRIDE=adwaita
 export QT_QPA_PLATFORMTHEME='qt5ct'
 export _JAVA_AWT_WM_NONREPARENTING=1
 
