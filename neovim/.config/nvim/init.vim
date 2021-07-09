@@ -53,11 +53,12 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 syntax enable
-set termguicolors
 set background=dark
 colorscheme nord
+"set background=light
+"colorscheme PaperColor
 
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
 set shiftwidth=4
 set tabstop=4

@@ -7,8 +7,8 @@ export TERMINAL=st
 export READER=zathura
 export BROWSER=brave
 
-export LIBVA_DRIVER_NAME=iHD
-export VDPAU_DRIVER=va_gl
+#export LIBVA_DRIVER_NAME=iHD
+#export VDPAU_DRIVER=va_gl
 
 # clean up
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -20,13 +20,15 @@ export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Dswing.crossplatformlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel -Djdk.gtk.version=3'
 export QT_QPA_PLATFORMTHEME='qt5ct'
 export _JAVA_AWT_WM_NONREPARENTING=1
+#export QT_STYLE_OVERRIDE=adwaita
+#export QT_QPA_PLATFORM=wayland
 
 # Wine
 export WINEARCH=win32
 
 # Video accleration
-export LIBVA_DRIVER_NAME=vdpau
-export VDPAU_DRIVER=nvidia
+# export LIBVA_DRIVER_NAME=vdpau
+# export VDPAU_DRIVER=nvidia
 
 # Fix config dirs
 export MPLAYER_HOME="$XDG_CONFIG_HOME"/mplayer
